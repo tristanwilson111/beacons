@@ -39,11 +39,15 @@ class _HeaderState extends State<Header> {
 
     _id1Controller = TextEditingController(
       text: _formType == FormType.iBeacon
-          ? '7da11b71-6f6a-4b6d-81c0-8abd031e6113'
-          : 'C336AA38-54BB-483B-AE75-3BA707855035',
+          ? 'fda50693-a4e2-4fb1-afcf-c6eb07647825'
+          : 'fda50693-a4e2-4fb1-afcf-c6eb07647825', //Big Block Beacon UUID
     );
-    _id2Controller = TextEditingController();
-    _id3Controller = TextEditingController();
+    _id2Controller = TextEditingController(
+      text: '10001',
+    );
+    _id3Controller = TextEditingController(
+      text: '19641',
+    );
   }
 
   void _onFormTypeChanged(FormType value) {
